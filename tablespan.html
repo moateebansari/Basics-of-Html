@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablespan</title>
+    <style>
+         table,td,tr
+    {
+        border:1px solid rgb(99, 9, 234);
+        border-collapse: collapse;
+    }
+    </style>
+   
+</head>
+<body>
+    <P>in this lecture we will learn how rowspan and colspan works in a table. we take similar previous table for the better understanding.</P>
+    <table>
+        <thead>
+            <tr>
+                <td>hindi</td>
+                <td>english</td>
+                <td>urdu</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <!-- in this we want to span 2nd row to 3 than we would comment(delete) 3rd row element.-->
+                <!-- <td>4</td> -->
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td colspan="2">8</td>
+                <!-- in this span we want to span 8 element of col than we delete the 9 element -->
+                <!-- <td>9</td> -->
+            </tr>
+    
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+        </tfoot>
+            
+    </table>
+</body>
+</html>
